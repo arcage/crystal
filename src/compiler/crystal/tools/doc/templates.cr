@@ -21,7 +21,7 @@ module Crystal::Doc
     ECR.def_to_s "#{__DIR__}/html/_methods_inherited.html"
   end
 
-  record OtherTypesTemplate, title : String, type : Type, other_types : Array(Type) do
+  record OtherTypesTemplate, title : String, type : Type, other_types : Array(Type), list_class : String, list_item_class : String do
     ECR.def_to_s "#{__DIR__}/html/_other_types.html"
   end
 

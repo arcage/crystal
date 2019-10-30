@@ -34,10 +34,10 @@
   <code><%= type.formatted_alias_definition %></code>
 <% end %>
 
-<%= OtherTypesTemplate.new("Included Modules", type, type.included_modules) %>
-<%= OtherTypesTemplate.new("Extended Modules", type, type.extended_modules) %>
-<%= OtherTypesTemplate.new("Direct Known Subclasses", type, type.subclasses) %>
-<%= OtherTypesTemplate.new("Direct including types", type, type.including_types) %>
+<%= OtherTypesTemplate.new("Included Modules", type, type.included_modules, "included_modules", "included_module") %>
+<%= OtherTypesTemplate.new("Extended Modules", type, type.extended_modules, "extended_modules", "extended_module") %>
+<%= OtherTypesTemplate.new("Direct Known Subclasses", type, type.subclasses, "subclasses", "subclass") %>
+<%= OtherTypesTemplate.new("Direct Including Types", type, type.including_types, "including_types", "including_type") %>
 
 <% if locations = type.locations %>
   <h2>Defined in:</h2>
